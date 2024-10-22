@@ -893,14 +893,14 @@ li {
   visibility: hidden;
 }
 
-/* .container {
+.container {
   font-family: Inter Tight;
   display: inline-block;
   align-items: center;
   justify-content: center;
   max-width: 375px;
   margin: 0 auto;
-} */
+}
 
 .image-section {
   flex: 1;
