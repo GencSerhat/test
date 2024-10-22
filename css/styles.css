@@ -191,8 +191,8 @@ li {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  width: 650px;
-  height: 759px;
+  width: 768px;
+  height: 840px;
 }
 
 .image {
@@ -760,14 +760,7 @@ li {
   .nav-links li {
     margin-left: 0px;
   }
-  .container {
-    font-family: Inter Tight;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    max-width: 375px;
-    margin: 0 auto;
-  }
+ 
   /* vegetables başlangıç */
 
   .vegetables {
@@ -891,9 +884,8 @@ li {
   .footer-ending a {
     font-size: 14px;
   }
-}
 
-/*footer bitiş*/
+
 
 
 /*how it works başlangıç*/
@@ -901,14 +893,14 @@ li {
   visibility: hidden;
 }
 
-.container {
+/* .container {
   font-family: Inter Tight;
-  display: block;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 375px;
   margin: 0 auto;
-}
+} */
 
 .image-section {
   flex: 1;
@@ -1065,7 +1057,7 @@ li {
   gap: 10px;
   padding: 0 auto;
   background-color: #ffffff;
-  radius: 30px;
+  border-radius: 30px;
   font-size: 48px;
   color: #141414;
   max-width: 355px;
@@ -1086,6 +1078,15 @@ li {
 }
 
 /*how it works bitiş*/
+
+
+
+
+}
+
+/*footer bitiş*/
+
+
 
 
 
