@@ -1,23 +1,21 @@
 :root {
-  --maincolor: #7A3145;
-  --green: #576F35;
+  --maincolor: #7a3145;
+  --green: #576f35;
   --black: #141414;
-  --white: #FBFBFB;
+  --white: #fbfbfb;
 
-/* 
+  /* 
 you order  */
---maincolor: #7a3145;
---green: #576f35;
---black: #141414;
---white: #fbfbfb;
---text: #141414;
- --background: #576f35;
---main-text: #fbfbfb;
---hover-btn: #622133;
+  --maincolor: #7a3145;
+  --green: #576f35;
+  --black: #141414;
+  --white: #fbfbfb;
+  --text: #141414;
+  --background: #576f35;
+  --main-text: #fbfbfb;
+  --hover-btn: #622133;
 
-/* you order */
-
-
+  /* you order */
 }
 * {
   margin: 0;
@@ -40,6 +38,7 @@ li {
 
 .header {
   width: 100%; /* Sabit genişlik kaldırıldı */
+  max-width: 1280px;
 }
 .vector-img {
   color: #fbfbfb;
@@ -56,13 +55,14 @@ li {
 
 .header-nav {
   margin-top: 3%;
-  /* margin-left: 4%; */
+  margin-left: 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
   position: absolute;
   width: 100%; /* Sabit genişlik kaldırıldı */
+  max-width: 1280px;
 }
 .nav-links {
   display: flex;
@@ -136,10 +136,14 @@ li {
   display: flex;
   /* flex-wrap: wrap; Mobilde esnek yerleşim sağlandı */
 }
+/* .hero-img{
+  width: 650px;
+  height: 800px;
+} */
 .hero-img-properties {
- /* width: 100%;  Esnek genişlik ayarlandı */
+  /* width: 100%;  Esnek genişlik ayarlandı */
   max-width: 650px;
-  height: auto;
+  /* height: auto; */
 }
 .hero-baslik {
   font-weight: 600;
@@ -160,6 +164,8 @@ li {
 }
 .hero {
   width: 100%; /* Sabit genişlik kaldırıldı */
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /*eklemler başlangıç */
@@ -198,7 +204,7 @@ li {
 
 .text-section {
   font-family: Inter Tight;
-  flex: 1;
+  /* flex: 1; */
   background-color: #4c6a37;
   color: #ffffff;
   padding: 20px;
@@ -341,203 +347,6 @@ li {
   color: #ffffff;
   font-weight: bold;
   font-size: 76px;
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-  .container {
-    font-family: Inter Tight;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    max-width: 768px;
-    padding: 100px 159px 100px 0px;
-    gap: 10px;
-  }
-
-  .image-section {
-    flex: 1;
-    background-color: #872843;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 auto;
-    width: 768px;
-    height: 840px;
-  }
-
-  .image {
-    width: 640px;
-    height: 640px;
-    padding: 0 auto;
-  }
-
-  .text-section {
-    font-family: Inter Tight;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 auto;
-    background-color: #4c6a37;
-    color: #ffffff;
-    padding: 20px;
-    width: 768px;
-    height: 840px;
-  }
-
-  .text-section-div {
-    font-family: Inter Tight;
-    width: 450px;
-    height: 499px;
-    padding: 50px;
-  }
-
-  .text-section h1 {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    margin: 0 auto 20px;
-    color: #fbfbfb;
-    width: 100%;
-  }
-
-  .text-section h1 span {
-    color: #b3b3b3;
-    font-weight: 600;
-  }
-
-  .text-section p {
-    width: 450px;
-    height: 60px;
-    text-align: left;
-    font-family: Inter Tight;
-    font-size: 16px;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-weight: 500;
-    color: #fbfbfb;
-  }
-  .count-lable {
-    counter-reset: step-counter;
-    width: 450px;
-    height: 269px;
-    border: 5px;
-  }
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 450px;
-    height: 269px;
-    align-items: auto;
-    list-style: none;
-    counter-reset: step-counter;
-  }
-
-  .steps li {
-    counter-increment: step-counter;
-    background-color: #ffffff;
-    color: #4c6a37;
-    box-sizing: border-box;
-    font-size: 16px;
-    position: relative;
-    font-weight: 600;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
-    max-height: 76px;
-  }
-
-  .steps li::before {
-    content: counter(step-counter);
-    background-color: #872843;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    width: 52px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-    transform: translateY(-50%);
-    top: 40px;
-    left: 15px;
-  }
-
-  .step {
-    display: flex;
-    align-items: auto;
-    box-sizing: border-box;
-    gap: 15px;
-    background-color: #ffffff;
-    color: #14141499;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    box-sizing: border-box;
-  }
-
-  .step p {
-    margin: 0;
-    font-size: 16px;
-    text-align: left;
-    color: #141414;
-    box-sizing: border-box;
-  }
-
-  .step p strong {
-    color: #141414;
-    text-align: left;
-    box-sizing: border-box;
-  }
-
-  .light-text {
-    color: rgba(20, 20, 20, 0.6);
-  }
-
-  .advertisement {
-    font-family: Inter Tight;
-    width: 768px;
-    margin: 0 auto;
-    letter-spacing: -1.5%;
-  }
-
-  .advertisement-section-h2 {
-    visibility: hidden;
-  }
-
-  .discount-banner {
-    font-family: Inter Tight;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 2vw;
-    font-size: 64px;
-    color: #000000;
-    width: 736px;
-    height: 288px;
-  }
-
-  .discount-banner {
-    font-family: Inter Tight;
-    width: 768px;
-    height: 488px;
-    size: 64px;
-    padding: 100px 16px 100px 16px;
-    gap: 10px;
-  }
-
-  .discount-text {
-    background-color: #4c6a37;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 64px;
-  }
 }
 
 /* VEGETABLES  başlangıç */
@@ -760,9 +569,6 @@ li {
 }
 /* reviews bitiş */
 
-
-
-
 /* footer başlangıç*/
 .footer {
   background-color: #7a3145;
@@ -793,8 +599,8 @@ li {
 
 .footer-nav-menu {
   display: flex;
-  flex-direction: column; 
-  gap: 175px; 
+  flex-direction: column;
+  gap: 175px;
 }
 
 .footer-nav-list {
@@ -955,150 +761,132 @@ li {
     margin-left: 0px;
   }
 
-/* vegetables başlangıç */
+  /* vegetables başlangıç */
 
-.vegetables {
-  width: 375px;
-  height: 2766px;
-  padding: 80px 20px 80px 20px;
-  gap: 40px;
-  opacity: 0px;
-}
+  .vegetables {
+    width: 375px;
+    height: 2766px;
+    padding: 80px 20px 80px 20px;
+    gap: 40px;
+    opacity: 0px;
+  }
 
-.vegetables-block {
-  width: 335px;
-  height: 192px;
-  gap: 20px;
-  opacity: 0px;
+  .vegetables-block {
+    width: 335px;
+    height: 192px;
+    gap: 20px;
+    opacity: 0px;
+  }
 
-}
+  .vegetables-header {
+    font-family: Inter Tight;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-.vegetables-header {
-  font-family: Inter Tight;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  text-align: left;
+  .vegetables-header-vegetables {
+    font-family: Inter Tight;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-}
+  .vegetables-paragraph {
+    font-family: Inter Tight;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+  }
 
-.vegetables-header-vegetables {
-  font-family: Inter Tight;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  text-align: left;
+  /* vegetables bitiş */
 
-}
+  /* reviews başlangıç  */
+  .reviews-section {
+    width: 375px;
+    height: 662px;
+    padding: 80px 20px 80px 20px;
+    gap: 40px;
+    opacity: 0px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -1.5%;
+  }
 
-.vegetables-paragraph {
-  font-family: Inter Tight;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: left;
-}
+  .title span {
+    font-family: Inter Tight;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: #576f35;
+  }
 
-/* vegetables bitiş */
+  .review.mobile {
+    border: 0px;
+    display: none;
+  }
 
+  .review {
+    width: 335px;
+    height: 238px;
+    padding: 20px 16px;
+    border-radius: 24px;
+    opacity: 0px;
+    text-align: center;
+    border: 1px solid #7a31454d;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-/* reviews başlangıç  */
-.reviews-section {
-  width: 375px;
-  height: 662px;
-  padding: 80px 20px 80px 20px;
-  gap: 40px;
-  opacity: 0px;
-}
-.title {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -1.5%;
-}
+  .reviews-block {
+    width: 335px;
+    height: 224px;
+    gap: 20px;
+  }
 
-.title span {
-  font-family: Inter Tight;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  text-align: left;
-  color: #576f35;
-}
+  .description {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #141414;
+  }
 
-.review.mobile {
-  border: 0px;
-  display: none;
-}
+  /* reviews bitiş */
 
-.review {
-  width: 335px;
-  height: 238px;
-  padding: 20px 16px;
-  border-radius: 24px;
-  opacity: 0px;
-  text-align: center;
-  border: 1px solid #7a31454d;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+  /*footer başlangıç*/
+  .container-footer {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
 
-.reviews-block {
-  width: 335px;
-  height: 224px;
-  gap: 20px;
-}
+  .footer-ending {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+  }
 
-.description {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  color:#141414
-}
+  .footer-nav-menu {
+    gap: 25px;
+  }
 
-/* reviews bitiş */
-
-
-/*footer başlangıç*/
-.container-footer {
-  flex-direction: column; 
-  padding: 20px; 
-  gap: 40px;
-}
-
-.footer-ending {
-  flex-direction: row; 
-  justify-content: space-between; 
-  padding: 40px 20px;
-}
-
-.footer-nav-menu {
-  gap: 25px; 
-}
-
-.footer-ending a {
-  font-size: 14px; 
-}
+  .footer-ending a {
+    font-size: 14px;
+  }
 }
 
 /*footer bitiş*/
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 @media (min-width: 375px) and (max-width: 768px) {
   html,
@@ -1369,7 +1157,7 @@ li {
     gap: 10px;
     padding: 0 auto;
     background-color: #ffffff;
-    radius: 30px;
+    border-radius: 30px;
     font-size: 48px;
     color: #141414;
     max-width: 355px;
@@ -1389,163 +1177,157 @@ li {
     font-size: 48px;
   }
 
+  /* vegetables başlangıç  */
+  .vegetables {
+    width: 768px;
+    height: auto;
+    padding: 100px 0 100px 32px;
+    gap: 50px;
+    opacity: 0px;
+  }
 
+  .vegetables-header {
+    font-family: Inter Tight;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
+  .vegetables-header-vegetables {
+    font-family: Inter Tight;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    opacity: 0.3;
+  }
 
-/* vegetables başlangıç  */
-.vegetables {
-  width: 768px;
-  height: auto;
-  padding: 100px 0 100px 32px;
-  gap: 50px;
-  opacity: 0px;
+  .vegetables-paragraph {
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+  }
+  /* vegetables başlangıç  */
+
+  /* reviews başlangıç */
+
+  .reviews-section {
+    background-color: #fbfbfb;
+    width: 1280px;
+    height: 701px;
+    padding-left: 100px;
+    padding-top: 100px;
+    gap: 50px;
+    opacity: 0px;
+  }
+
+  .reviews-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .reviews-block {
+    width: 553px;
+    height: 193px;
+    gap: 25px;
+    opacity: 0px;
+    font-family: Inter Tight;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 64px;
+    letter-spacing: -1.5%;
+  }
+
+  .title span {
+    font-family: Inter Tight;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: #576f35;
+  }
+
+  .description {
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #141414;
+  }
+
+  .reviews {
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .review {
+    width: 343px;
+    height: 258px;
+    padding: 20px 0px 0px 0px;
+    border-radius: 24px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    text-align: center;
+    border: 1px solid #7a31454d;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .review img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .review h3 {
+    font-family: Inter Tight;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.8px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #141414;
+  }
+
+  .review p {
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: center;
+    color: #141414;
+    opacity: 0.4;
+  }
+  /* reviews bitiş */
 }
 
-.vegetables-header {
-  font-family: Inter Tight;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 64px;
-  letter-spacing: -0.015em;
-  text-align: left;
-}
-
-.vegetables-header-vegetables {
-  font-family: Inter Tight;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 64px;
-  letter-spacing: -0.015em;
-  text-align: left;
-  opacity: 0.3;
-}
-
-.vegetables-paragraph {
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: left;
-}
-/* vegetables başlangıç  */
-
-
-/* reviews başlangıç */
-
-.reviews-section {
-  background-color: #fbfbfb;
-  width: 1280px;
-  height: 701px;
-  padding-left: 100px;
-  padding-top: 100px;
-  gap: 50px;
-  opacity: 0px;
-}
-
-.reviews-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.reviews-block {
-  width: 553px;
-  height: 193px;
-  gap: 25px;
-  opacity: 0px;
-  font-family: Inter Tight;
-  display: flex;
-  flex-direction: column;
-}
-
-.review-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.title {
-  font-size: 64px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  line-height: 64px;
-  letter-spacing: -1.5%;
-}
-
-.title span {
-  font-family: Inter Tight;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 64px;
-  letter-spacing: -0.015em;
-  text-align: left;
-  color: #576f35;
-}
-
-.description {
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: left;
-  color: #141414;
-}
-
-.reviews {
-  gap: 25px;
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-}
-
-.review {
-  width: 343px;
-  height: 258px;
-  padding: 20px 0px 0px 0px;
-  border-radius: 24px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  text-align: center;
-  border: 1px solid #7a31454d;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.review img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-.review h3 {
-  font-family: Inter Tight;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 19.8px;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #141414;
-}
-
-.review p {
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22.4px;
-  text-align: center;
-  color: #141414;
-  opacity: 0.4;
-}
-/* reviews bitiş */
-
-
-}
-
-@media (min-width:320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
   /* .vegetables {
       width: 375px;
       height: 2766px;
@@ -1590,11 +1372,6 @@ li {
       text-align: left;
   } */
 }
-
-
-
-
-
 
 /* 
 your order tamamı başlangıç */
@@ -1992,22 +1769,21 @@ your order tamamı başlangıç */
 
 /* your order tamamı bitiş */
 
-
 /*footer başlangıç */
 @media (min-width: 375px) {
   .container-footer {
-    flex-direction: row; 
-    padding: 40px; 
+    flex-direction: row;
+    padding: 40px;
     gap: 40px;
   }
 
   .footer-nav-menu {
-    gap: 50px; 
+    gap: 50px;
   }
 
   .footer-ending {
-    flex-direction: row; 
-    align-items: center; 
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 40px;
   }
@@ -2028,7 +1804,7 @@ your order tamamı başlangıç */
   }
 
   .footer-ending {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
     padding: 72px;
   }
@@ -2040,7 +1816,7 @@ your order tamamı başlangıç */
 
 @media (min-width: 1280px) {
   .container-footer {
-    flex-direction: row; 
+    flex-direction: row;
     padding: 72px;
   }
 
