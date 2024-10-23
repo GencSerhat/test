@@ -359,6 +359,7 @@ li {
   padding: 100px 0 0 100px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .vegetables-block {
@@ -474,6 +475,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding-left: 8%;
+    padding-top: 2%;
 }
 
 .reviews-block {
@@ -567,12 +570,15 @@ li {
   color: #141414;
   opacity: 0.4;
 }
+
 /* reviews bitiş */
 
 /* footer başlangıç*/
 .footer {
   background-color: #7a3145;
   color: #fbfbfb;
+  width: 1280px;
+    margin: 0 auto
 }
 
 .container-footer {
@@ -1422,13 +1428,16 @@ li {
   /* vegetables başlangıç  */
 
   /* reviews başlangıç */
-
+  .tablet{
+    display: none;
+  }
   .reviews-section {
     background-color: #fbfbfb;
-    width: 1280px;
-    height: 701px;
-    padding-left: 100px;
-    padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
+    padding-left: 3%;
+   
     gap: 50px;
     opacity: 0px;
   }
@@ -1438,7 +1447,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 50px;
-  }
+    padding-left: 3%;
 
   .reviews-block {
     width: 553px;
@@ -1454,6 +1463,8 @@ li {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 343px;
+    height: 258px;
   }
 
   .title {
@@ -1533,6 +1544,7 @@ li {
   }
   /* reviews bitiş */
 }
+}
 
 @media (min-width: 320px) and (max-width: 375px) {
   /* .vegetables {
@@ -1586,6 +1598,8 @@ your order tamamı başlangıç */
 /* YOUR ORDER */
 .your-order {
   background-color: var(--maincolor);
+  width: 1280px;
+    margin: 0 auto;
 }
 
 .your-order-title {
@@ -1652,11 +1666,11 @@ your order tamamı başlangıç */
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .your-order-text {
     width: 742px;
   }
-}
+} */
 
 .container-order-box-details {
   display: flex;
@@ -1688,18 +1702,19 @@ your order tamamı başlangıç */
 
 @media screen and (min-width: 768px) {
   .container-order-form-box {
-    width: 628px;
-    padding: 50px 100px;
+    width: 527px;
+    height: 534px;
+    padding: 50px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .container-order-form-box {
     width: 529px;
     height: 534px;
     padding: 50px;
   }
-}
+} */
 
 .order-form-title {
   display: block;
@@ -1885,16 +1900,17 @@ your order tamamı başlangıç */
 }
 @media screen and (min-width: 768px) {
   .container-img-follow-box {
-    width: 628px;
+    width: 527px;
+    height: 534px;
     padding: 50px;
   }
 }
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .container-img-follow-box {
     width: 527px;
     height: 534px;
   }
-}
+} */
 
 .your-order-follow-img {
   display: block;
@@ -1908,6 +1924,12 @@ your order tamamı başlangıç */
   .your-order-follow-img {
     width: auto;
     height: 273px;
+  }
+
+}
+@media (min-width:35px) and (max-width:768px){
+  .section{
+    width: 768px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1924,7 +1946,9 @@ your order tamamı başlangıç */
   font-size: 12px;
   line-height: 129%;
   letter-spacing: -0.01em;
-  color: rgba(251, 251, 251, 0.5);
+  /* color: rgba(251, 251, 251, 0.5); */
+  color: #fbfbfb;
+    opacity: 0.5;
 }
 @media screen and (min-width: 375px) {
   .social-networks-title {
@@ -1950,17 +1974,26 @@ your order tamamı başlangıç */
   }
 }
 
-.social-networks-item {
-  font-family: var(--font-family);
+{
+  /* font-family: var(--font-family);
   font-weight: 600;
   font-size: 22px;
   line-height: 108%;
   letter-spacing: -0.01em;
   color: var(--main-text);
+  color: #fbfbfb; */
+}
+.social-networks-item a{
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.5%;
 }
 @media screen and (min-width: 375px) {
   .social-networks-item {
     font-size: 24px;
+    
   }
 }
 @media screen and (min-width: 768px) {
@@ -1973,6 +2006,24 @@ your order tamamı başlangıç */
 .your-order-form-link {
   color: var(--main-text);
 }
+
+.section{
+  align-items: center;
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 768px){
+.container-order-box-details {
+  
+    margin-right: 48%;
+}
+}
+
+
+
 
 /* your order tamamı bitiş */
 
@@ -2001,6 +2052,7 @@ your order tamamı başlangıç */
 }
 
 @media (min-width: 768px) {
+
   .container-footer {
     flex-direction: row;
     padding: 72px;
